@@ -5,7 +5,7 @@
 ## About Me
 
 I'm a Computer Science student passionate about Backend Development.
-Currently I'm learning HTML, CSS, JavaScript, Git, GitHub, Python and Django.
+Currently I'm learning HTML, CSS, JavaScript, Git, GitHub.
 
 ---
 
