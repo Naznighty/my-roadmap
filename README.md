@@ -40,6 +40,7 @@ Currently I'm learning HTML, CSS, JavaScript, Git, GitHub.
 - [x] JavaScript Basics
 - [x] Git Installation
 - [x] GitHub Account
+- [x] Prettier and Live Server extensions enabled 
 - [ ] First Portfolio
 - [ ] Deploy First Project
 
