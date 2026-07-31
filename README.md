@@ -28,7 +28,6 @@ Currently I'm learning HTML, CSS, JavaScript, Git, GitHub.
 | Git | ✅ |
 | GitHub Desktop | ✅ |
 | VS Code | ✅ |
-| Google Chrome | ✅ |
 | Python | ✅ |
 | Docker | ⬜ |
 
@@ -41,7 +40,6 @@ Currently I'm learning HTML, CSS, JavaScript, Git, GitHub.
 - [x] JavaScript Basics
 - [x] Git Installation
 - [x] GitHub Account
-- [x] First Repository
 - [ ] First Portfolio
 - [ ] Deploy First Project
 
