@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Validation form</h1>
+
+    <form id="valform" novalidate>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        <div class="error" id="emailError"></div>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+        <div class="error" id="passwordError"></div>
+      </div>
+
+      <div class="field">
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" id="confirmPassword" />
+        <div class="error" id="confirmPasswordError"></div>
+      </div>
+      <p class="submit">
+        <button type="button" id="submitbtn">Send</button>
+      </p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
