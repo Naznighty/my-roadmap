@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NASA Explorer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#home">NASA Explorer</a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#asteroids">Asteroids</a>
+        <a href="#mars">Mars</a>
+        <a href="#earth">Earth</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Explore the Universe</h1>
+        <p class="sub">
+          Live data from NASA: today's sky, nearby asteroids, Mars and Earth.
+        </p>
+        <div id="apod" class="card apod">Loading...</div>
+      </section>
+
+      <section id="asteroids">
+        <h2>Asteroids Today</h2>
+        <div id="neo" class="grid">Loading...</div>
+      </section>
+
+      <section id="mars">
+        <h2>Mars Rover Photos</h2>
+        <div id="marsPhotos" class="grid">Loading...</div>
+      </section>
+
+      <section id="earth">
+        <h2>Earth from Space</h2>
+        <div id="epic" class="grid">Loading...</div>
+      </section>
+
+      <section id="gallery">
+        <h2>NASA Image Library</h2>
+        <form id="searchForm">
+          <input id="q" value="nebula" placeholder="Search images..." />
+          <button>Search</button>
+        </form>
+        <div id="results" class="grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <div class="hero-links">
+        <a href="https://github.com/Naznighty">
+          <i class="fa-brands fa-github"></i> GitHub</a
+        >
+        <a href="https://www.linkedin.com/in/nazanin-rahgozar-7b816b42b/"
+          ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+        >
+        <a href="mailto:nazanin.rahgozarw@gmail.com"
+          ><i class="fa-regular fa-envelope"></i> Email</a
+        >
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
