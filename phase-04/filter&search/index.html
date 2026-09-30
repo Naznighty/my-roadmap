@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Gear Store</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Inter:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Nazanin</a>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li class="dropdown">
+            <a href="#categories" class="dropdown-toggle"
+              >Categories<i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="#monitor"><i class="fa-solid fa-display"></i> Monitor</a>
+              <a href="#keyboard"
+                ><i class="fa-regular fa-keyboard"></i> Keyboard</a
+              >
+              <a href="#vg"><i class="fa-solid fa-dice"></i> Video Games</a>
+              <a href="#headset"><i class="fa-solid fa-headset"></i> Headset</a>
+              <a href="#controller"
+                ><i class="fa-solid fa-gamepad"></i> Controller</a
+              >
+            </div>
+          </li>
+
+          <li><a href="#aboutus">About Us</a></li>
+        </ul>
+      </nav>
+      <form class="search" action="/search" method="get">
+        <input type="search" name="q" placeholder="Search..." />
+        <button type="submit" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </header>
+    <main>
+      <section id="home">
+        <div class="hero-content">
+          <h1>Developer <span class="accent">Game</span><br />Store</h1>
+          <p>
+            <br />
+            Welcome to Developer Game Store — a place for gamers and developers
+            to find everything they need for the ultimate setup.<br />
+            🖥️Monitors<br />
+            ⌨️ Mechanical Keyboards<br />
+            🎧 Headsets<br />🕹️ Video Games<br />
+            Gaming Accessories Built for better setups, smoother gameplay, and
+            endless coding sessions. ⚡
+          </p>
+          <div class="hero-actions">
+            <a href="#categories" class="btn1">Buy Now</a>
+            <a href="#gallery" class="btn2">Visit</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/gaming.jpg" alt="coding" />
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <img src="images/im1.jpg" alt="Gallery image 1" loading="lazy" />
+          <img src="images/im2.jpg" alt="Gallery image 2" loading="lazy" />
+          <img src="images/im5.jpg" alt="Gallery image 5" loading="lazy" />
+          <img src="images/im4.jpg" alt="Gallery image 4" loading="lazy" />
+          <img src="images/im7.jpg" alt="Gallery image 7" loading="lazy" />
+          <img src="images/im9.jpg" alt="Gallery image 9" loading="lazy" />
+          <img src="images/im14.jpg" alt="Gallery image 10" loading="lazy" />
+          <img src="images/im8.jpg" alt="Gallery image 8" loading="lazy" />
+          <img src="images/im3.jpg" alt="Gallery image 3" loading="lazy" />
+          <img src="images/im6.jpg" alt="Gallery image 6" loading="lazy" />
+        </div>
+      </section>
+
+      <section id="categories">
+        <h2>Categories</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="monitor">Monitor</button>
+          <button class="filter-btn" data-filter="keyboard">Keyboard</button>
+          <button class="filter-btn" data-filter="vg">Video Games</button>
+          <button class="filter-btn" data-filter="headset">Headset</button>
+          <button class="filter-btn" data-filter="controller">
+            Controller
+          </button>
+        </div>
+        <div class="products">
+          <article class="product" data-category="monitor">
+            <div class="product-img">
+              <img src="images/monitor.webp" alt='Curved 27" Monitor' />
+            </div>
+            <h3>Curved 27" Monitor</h3>
+            <p class="price">$249</p>
+            <button class="btn1">Add to cart</button>
+          </article>
+          <article class="product" data-category="monitor">
+            <div class="product-img">
+              <img src="images/monitor2.jpg.webp" alt="4K Dev Monitor 32" />
+            </div>
+            <h3>4K Dev Monitor 32"</h3>
+            <p class="price">$399</p>
+            <button class="btn1">Add to cart</button>
+          </article>
+          <article class="product" data-category="keyboard">
+            <div class="product-img">
+              <img src="images/key3.jpg" alt="Mechanical Keyboard" />
+            </div>
+            <h3>Mechanical Keyboard</h3>
+            <p class="price">$89</p>
+            <button class="btn1">Add to cart</button>
+          </article>
+          <article class="product" data-category="keyboard">
+            <div class="product-img">
+              <img src="images/key2.jpg" alt="Wireless 75% Keyboard" />
+            </div>
+            <h3>Wireless 75% Keyboard</h3>
+            <p class="price">$119</p>
+            <button class="btn1">Add to cart</button>
+          </article>
+          <article class="product" data-category="vg">
+            <div class="product-img">
+              <img src="images/game2.jpeg" alt="The Last Of Us" />
+            </div>
+            <h3>The Last Of Us</h3>
+            <p class="price">$59</p>
+            <button class="btn1">Add to cart</button>
+          </article>
+          <article class="product" data-category="vg">
+            <div class="product-img">
+              <img src="images/game1.jpg" alt="Crash bandicoot trilogy" />
+            </div>
+            <h3>Crash Bandicoot Trilogy</h3>
+            <p class="price">$49</p>
+            <button class="btn1">Add to cart</button>
+          </article>
+          <article class="product" data-category="headset">
+            <div class="product-img">
+              <img src="images/head4.jpeg" alt="Surround headset" />
+            </div>
+            <h3>Surround Headset</h3>
+            <p class="price">$79</p>
+            <button class="btn1">Add to cart</button>
+          </article>
+          <article class="product" data-category="headset">
+            <div class="product-img">
+              <img src="images/head5.jpeg" alt="Wireless headset" />
+            </div>
+            <h3>Wireless Headset</h3>
+            <p class="price">$129</p>
+            <button class="btn1">Add to cart</button>
+          </article>
+          <article class="product" data-category="controller">
+            <div class="product-img">
+              <img src="images/cont1.jpeg" alt="pro controller " />
+            </div>
+            <h3>Pro Controller</h3>
+            <p class="price">$69</p>
+            <button class="btn1">Add to cart</button>
+          </article>
+          <article class="product" data-category="controller">
+            <div class="product-img">
+              <img src="images/cont2.jpeg" alt="compact controller" />
+            </div>
+            <h3>Compact Controller</h3>
+            <p class="price">$39</p>
+            <button class="btn1">Add to cart</button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <br />
+    <br />
+    <section id="aboutus" class="aboutus">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="eyebrow">About Us</span>
+          <h2>DevGame</h2>
+          <h3>GAME.CODE.UPGRADE</h3>
+          <p>
+            Your ultimate destination for <br />
+            gaming gear and developer setups.
+          </p>
+          <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fa-brands fa-discord"></i> Discord</a>
+          </div>
+        </div>
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4>SHOP</h4>
+            <a href="#categories">Monitor</a>
+            <a href="#categories">Keyboard</a>
+            <a href="#categories">Video Games</a>
+            <a href="#categories">Headset</a>
+            <a href="#categories">Controller</a>
+          </div>
+          <div class="footer-col">
+            <h4>COMPANY</h4>
+            <a href="#">About Us</a>
+            <a href="#">Our Story</a>
+            <a href="#">Our Team</a>
+            <a href="#">Careers</a>
+          </div>
+          <div class="footer-col">
+            <h4>SUPPORT</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <hr />
+      <div class="footer-bottom">
+        <span>© 2026 DevGame Store</span>
+        <p>Made for Gamers &amp; Developers ⚡</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
