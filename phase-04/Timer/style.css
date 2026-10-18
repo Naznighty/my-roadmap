@@ -1,0 +1,140 @@
+:root {
+  --bg: #0f0d12;
+  --card: #1a171f;
+  --track: #2b2631;
+  --text: #f5eef2;
+  --muted: #8c8493;
+  --pink: #f4a6c0;
+  --pink-dark: #2a1a22;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Tahoma,
+    sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at 50% 30%, #1d1722, var(--bg) 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.stopwatch-card {
+  background: var(--card);
+  padding: 2.5rem 2.5rem 2rem;
+  border-radius: 28px;
+  border: 1px solid #2a2530;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.ring {
+  width: 280px;
+  height: 280px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 2rem;
+  position: relative;
+  background: conic-gradient(var(--pink) var(--p, 0deg), var(--track) 0);
+  box-shadow: 0 0 40px rgba(244, 166, 192, 0.15);
+}
+
+.ring::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  background: var(--card);
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+  position: relative;
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  direction: ltr;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn {
+  min-width: 88px;
+  padding: 11px 22px;
+  border: 1.5px solid transparent;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 0.15s,
+    background-color 0.2s,
+    opacity 0.2s;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 3px;
+}
+
+.btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.start {
+  background: var(--pink);
+  color: #2a1520;
+}
+.start:hover:not(:disabled) {
+  background: #f8bcd0;
+}
+
+.pause {
+  background: transparent;
+  border-color: var(--pink);
+  color: var(--pink);
+}
+.pause:hover:not(:disabled) {
+  background: var(--pink-dark);
+}
+
+.reset {
+  background: transparent;
+  border-color: var(--track);
+  color: var(--muted);
+}
+.reset:hover:not(:disabled) {
+  border-color: var(--muted);
+  color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
